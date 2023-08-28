@@ -25,7 +25,7 @@ const Splash = props => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.splashTextStyle}>Welcome</Text>
+      <Text style={styles.splashTextStyle}>Welcome APP</Text>
     </View>
   );
 };
