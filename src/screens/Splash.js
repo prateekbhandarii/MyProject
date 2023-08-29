@@ -6,10 +6,8 @@ const Splash = props => {
   const checkIfUserLoggedIn = async () => {
     try {
       let value = await AsyncStorage.getItem('@UserCreds');
-      console.log('saved user', value);
       return value != null;
     } catch (e) {
-      console.log('getting saved user error: ', e);
       return false;
     }
   };
@@ -18,16 +16,16 @@ const Splash = props => {
     setTimeout(async () => {
       const isAlreadyLoggedIn = await checkIfUserLoggedIn();
       if (isAlreadyLoggedIn) {
-        props.navigation.navigate('Tab');
+        props.navigation.navigate('TAB');
       } else {
-        props.navigation.navigate('Login');
+        props.navigation.navigate('LOGIN');
       }
     }, 3000);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.splashTextStyle}>Welcome</Text>
+      <Text style={styles.splashTextStyle}>Welcome APP</Text>
     </View>
   );
 };

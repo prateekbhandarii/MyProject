@@ -26,7 +26,6 @@ const Login = props => {
       await AsyncStorage.setItem('@UserCreds', response.id.toString());
       console.log('user saved', response.id.toString());
     } catch (e) {
-      console.log('save user in db error: ', e);
     }
   };
 
