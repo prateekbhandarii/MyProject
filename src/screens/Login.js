@@ -41,14 +41,14 @@ const Login = props => {
       )}
       <View style={styles.container}>
         <EditText
-          placeholderText="username"
+          placeholderText="enter username"
           text={username}
           onTextChange={text => {
             setUsername(text);
           }}
         />
         <EditText
-          placeholderText="password"
+          placeholderText="enter password"
           text={password}
           onTextChange={text => {
             setPassword(text);
